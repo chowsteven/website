@@ -24,7 +24,7 @@ export const Technologies = () => {
   return (
     <div className='pl-12 lg:w-96'>
       <p className='text-2xl font-semibold mb-3'>Technologies</p>
-      <ul className='grid grid-flow-col grid-rows-9 gap-2 md:grid-rows-6 xl:gap-x-4'>
+      <ul className='grid grid-flow-col grid-rows-9 gap-2 md:grid-rows-6 lg:grid-rows-4 xl:gap-x-4'>
         <Technology name='HTML' icon={<SiHtml5 />} />
         <Technology name='CSS' icon={<SiCss3 />} />
         <Technology name='JavaScript' icon={<SiJavascript />} />
