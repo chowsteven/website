@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { About } from '../components/About';
+import { Contact } from '../components/Contact';
 import { Intro } from '../components/Intro';
 import { Projects } from '../components/Projects';
 import { Technologies } from '../components/Technologies';
@@ -21,7 +22,10 @@ const Home: NextPage = () => {
         <div className='max-w-screen mx-auto'>
           <About />
           <Projects />
-          <Technologies />
+          <div className='flex flex-col gap-12 pb-12 xl:flex-row xl:gap-[438px]'>
+            <Technologies />
+            <Contact />
+          </div>
         </div>
       </main>
 
