@@ -82,7 +82,7 @@ export const Projects = () => {
 
   return (
     <div className='p-12'>
-      <p className='text-2xl font-semibold mb-6'>Projects</p>
+      <p className='text-gray-200 text-2xl font-semibold mb-6'>Projects</p>
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3'>
         {projects.map((project, i) => (
           <ProjectCard key={i} project={project} />
