@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { About } from '../components/About';
 import { Intro } from '../components/Intro';
 import { Projects } from '../components/Projects';
+import { Technologies } from '../components/Technologies';
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
         <div className='max-w-screen mx-auto'>
           <About />
           <Projects />
+          <Technologies />
         </div>
       </main>
 
