@@ -1,28 +1,31 @@
 import Link from 'next/link';
 import { MdEmail, MdPhone } from 'react-icons/md';
 import { SiTwitter, SiDiscord } from 'react-icons/si';
+import { ContactInfo } from './ContactInfo';
 
 export const Contact = () => {
+  const contactInfo: { icon: JSX.Element; name: string }[] = [
+    { icon: <SiTwitter size={24} />, name: 'Private!' },
+    { icon: <SiDiscord size={24} />, name: 'Private!' },
+    { icon: <MdPhone size={24} />, name: 'Very private!' },
+  ];
+
   return (
     <div className='pl-12'>
-      <p className='text-2xl font-semibold mb-2'>Contact</p>
+      <p className='text-gray-200 text-2xl font-semibold mb-2'>Contact</p>
       <div className='flex flex-col gap-2'>
+        {/* email */}
         <div className='flex gap-2'>
-          <MdEmail size={24} />
-          <Link href='mailto:email@email.com'>email@email.com</Link>
+          <MdEmail size={24} className='text-gray-200' />
+          <Link href='mailto:email@email.com'>
+            <a className='text-gray-300'>email@email.com</a>
+          </Link>
         </div>
-        <div className='flex gap-2'>
-          <SiTwitter size={24} />
-          Private!
-        </div>
-        <div className='flex gap-2'>
-          <SiDiscord size={24} />
-          Private!
-        </div>
-        <div className='flex gap-2'>
-          <MdPhone size={24} />
-          Very private!
-        </div>
+
+        {/* twitter, discord, phone */}
+        {contactInfo.map((info, i) => (
+          <ContactInfo key={i} info={info} />
+        ))}
       </div>
     </div>
   );
