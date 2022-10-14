@@ -42,6 +42,17 @@ export const Projects = () => {
       ],
     },
     {
+      name: 'Character Finder',
+      description: "A game similar to Where's Waldo",
+      link: 'https://character-finder-5d84d.web.app',
+      github: 'https://github.com/chowsteven/character-finder',
+      image: '/images/character-finder.png',
+      technologies: [
+        <SiReact key={1} size={24} />,
+        <SiFirebase key={2} size={24} />,
+      ],
+    },
+    {
       name: 'Portfolio Website',
       description: 'This website!',
       link: 'https://google.com',
@@ -54,17 +65,7 @@ export const Projects = () => {
         <SiTailwindcss key={4} size={24} />,
       ],
     },
-    {
-      name: 'Character Finder',
-      description: "A game similar to Where's Waldo",
-      link: 'https://character-finder-5d84d.web.app',
-      github: 'https://github.com/chowsteven/character-finder',
-      image: '/images/character-finder.png',
-      technologies: [
-        <SiReact key={1} size={24} />,
-        <SiFirebase key={2} size={24} />,
-      ],
-    },
+
     {
       name: 'Shopping Cart',
       description: 'Fake e-commerce store for highly in-demand sneakers',
