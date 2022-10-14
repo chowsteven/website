@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { About } from '../components/About';
 import { Contact } from '../components/Contact';
 import { Intro } from '../components/Intro';
+import { FunFacts } from '../components/FunFacts';
 import { Projects } from '../components/Projects';
 import { Technologies } from '../components/Technologies';
 
@@ -22,9 +23,12 @@ const Home: NextPage = () => {
         <div className='max-w-screen mx-auto'>
           <About />
           <Projects />
-          <div className='flex flex-col gap-12 pb-12 xl:flex-row xl:gap-[438px]'>
+          <div className='flex flex-col gap-12 pb-12 2xl:flex-row 2xl:gap-[438px]'>
             <Technologies />
-            <Contact />
+            <div className='flex flex-col gap-12 lg:flex-row 3xl:gap-28 4xl:gap-[426px]'>
+              <FunFacts />
+              <Contact />
+            </div>
           </div>
         </div>
       </main>

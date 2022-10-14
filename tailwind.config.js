@@ -9,6 +9,10 @@ module.exports = {
       gridTemplateRows: {
         9: 'repeat(9, minmax(0, 1fr))',
       },
+      screens: {
+        '3xl': '1920px',
+        '4xl': '2560px',
+      },
     },
   },
   plugins: [],
