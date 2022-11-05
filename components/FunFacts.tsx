@@ -7,7 +7,7 @@ export const FunFacts = () => {
     'New Yorker',
   ];
   return (
-    <div className='pl-12'>
+    <div className='px-12 2xl:pr-0'>
       <p className='text-gray-200 text-2xl font-semibold mb-2'>Fun Facts</p>
       <div className='flex flex-col gap-2'>
         <p className='text-gray-300'>
