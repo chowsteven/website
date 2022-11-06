@@ -10,10 +10,23 @@ import {
   SiMongodb,
   SiNodedotjs,
   SiFirebase,
+  SiElectron,
 } from 'react-icons/si';
 
 export const Projects = () => {
   const projects: Project[] = [
+    {
+      name: 'Freshmints',
+      description: 'Desktop application for NFT minting',
+      github: 'https://github.com/chowsteven/freshmints',
+      image: '/images/freshmints.png',
+      technologies: [
+        <SiTypescript key={1} size={24} />,
+        <SiReact key={2} size={24} />,
+        <SiElectron key={3} size={24} />,
+        <SiTailwindcss key={4} size={24} />,
+      ],
+    },
     {
       name: 'Refreshmints',
       description: 'A website that shows the latest NFT activity',
@@ -72,12 +85,6 @@ export const Projects = () => {
       github: 'https://github.com/chowsteven/shopping-cart',
       image: '/images/shopping-cart.png',
       technologies: [<SiReact key={1} size={24} />],
-    },
-    {
-      name: 'Weather App',
-      description: 'Your typical beginner weather app',
-      github: 'https://github.com/chowsteven/weather-app',
-      technologies: [<SiJavascript key={1} size={24} />],
     },
   ];
 
